@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "donations",
+  "info": {
+    "singularName": "donation",
+    "pluralName": "donations",
+    "displayName": "Donation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Fullname": {
+      "type": "string"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Tithe",
+        "Grateful",
+        "Building",
+        "Other"
+      ]
+    },
+    "AccountCheck": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "ContactInfo": {
+      "type": "string"
+    },
+    "SendThankYouNote": {
+      "type": "boolean"
+    },
+    "Notes": {
+      "type": "text"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "donations"
+    }
+  }
+}

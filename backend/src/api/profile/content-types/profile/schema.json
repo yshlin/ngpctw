@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profiles",
+  "info": {
+    "singularName": "profile",
+    "pluralName": "profiles",
+    "displayName": "Profile",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Fullname": {
+      "type": "string"
+    },
+    "Birthday": {
+      "type": "date"
+    },
+    "Gender": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female"
+      ]
+    },
+    "Age": {
+      "type": "enumeration",
+      "enum": [
+        "Under 12",
+        "Between 13-20",
+        "Between 21-40",
+        "Between 41-60",
+        "Above 60"
+      ]
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Facebook": {
+      "type": "string"
+    },
+    "LINE": {
+      "type": "string"
+    },
+    "CompanyOrSchool": {
+      "type": "string"
+    },
+    "HowYouFindUs": {
+      "type": "enumeration",
+      "enum": [
+        "Came by",
+        "Referral",
+        "Seeking for a church",
+        "Church events"
+      ]
+    },
+    "Religion": {
+      "type": "enumeration",
+      "enum": [
+        "No",
+        "Seeker",
+        "Baptized",
+        "Other"
+      ]
+    },
+    "ContactTime": {
+      "type": "string"
+    },
+    "Prayer": {
+      "type": "text"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "profile"
+    }
+  }
+}

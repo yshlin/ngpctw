@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_takings",
+  "info": {
+    "singularName": "course-taking",
+    "pluralName": "course-takings",
+    "displayName": "CourseTaking"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "course": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course.course",
+      "inversedBy": "course_takings"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "course_takings"
+    }
+  }
+}

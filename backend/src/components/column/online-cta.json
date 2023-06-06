@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_column_online_ctas",
+  "info": {
+    "displayName": "OnlineCTA"
+  },
+  "options": {},
+  "attributes": {
+    "Description": {
+      "type": "richtext"
+    },
+    "Button": {
+      "type": "string"
+    },
+    "Background": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

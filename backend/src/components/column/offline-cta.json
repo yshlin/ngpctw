@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_column_offline_ctas",
+  "info": {
+    "displayName": "OfflineCTA"
+  },
+  "options": {},
+  "attributes": {
+    "Content": {
+      "type": "richtext"
+    }
+  }
+}
