@@ -2,11 +2,13 @@
   "scripts": {
     "backend": "cd backend && node node_modules/@strapi/strapi/bin/strapi.js start",
     "backend-dev": "cd backend && node node_modules/@strapi/strapi/bin/strapi.js develop",
+    "backend-install": "cd backend && npm install",
     "frontend": "cd frontend && node node_modules/nuxt/bin/nuxt.mjs start",
     "frontend-dev": "cd frontend && node node_modules/nuxt/bin/nuxt.mjs dev",
+    "frontend-install": "cd frontend && npm install",
     "dev": "concurrently \"npm run backend-dev\" \"npm run frontend-dev\"",
     "start": "concurrently \"npm run backend\" \"npm run frontend\"",
-    "postinstall": ""
+    "postinstall": "npm run backend-install && npm run frontend-install"
   },
   "engines": {
     "node": ">=14.19.1 <=18.x.x",
