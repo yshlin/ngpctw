@@ -11,8 +11,7 @@ module.exports = [
             "'self'",
             "data:",
             "blob:",
-            "dl.airtable.com",
-            "https://market-assets.strapi.io",
+            "ngpctw.azureedge.net",
             /**
              * Note: If using a STORAGE_URL replace `https://${process.env.STORAGE_ACCOUNT}.blob.core.windows.net` w/ process.env.STORAGE_URL
              * If using a CDN URL make sure to include that url in the CSP headers process.env.STORAGE_CDN_URL
@@ -23,7 +22,7 @@ module.exports = [
             "'self'",
             "data:",
             "blob:",
-            "dl.airtable.com",
+            "ngpctw.azureedge.net",
             /**
              * Note: If using a STORAGE_URL replace `https://${process.env.STORAGE_ACCOUNT}.blob.core.windows.net` w/ process.env.STORAGE_URL
              * If using a CDN URL make sure to include that url in the CSP headers process.env.STORAGE_CDN_URL
