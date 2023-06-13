@@ -6,13 +6,13 @@
   "scripts": {
     "develop": "node node_modules/@strapi/strapi/bin/strapi.js develop",
     "start": "node node_modules/@strapi/strapi/bin/strapi.js start",
-    "build": "strapi build",
-    "strapi": "strapi"
+    "build": "node node_modules/@strapi/strapi/bin/strapi.js build",
+    "strapi": "node node_modules/@strapi/strapi/bin/strapi.js"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.10.5",
-    "@strapi/plugin-users-permissions": "4.10.5",
-    "@strapi/strapi": "4.10.5",
+    "@strapi/plugin-i18n": "4.11.1",
+    "@strapi/plugin-users-permissions": "4.11.1",
+    "@strapi/strapi": "4.11.1",
     "mysql": "^2.18.1",
     "strapi-provider-upload-azure-storage": "^3.1.3"
   },
